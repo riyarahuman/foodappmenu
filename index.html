@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Food Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1>Our Regular Menu Pack</h1>
+
+      <!-- CATEGORY DROPDOWNS -->
+      <div class="categories">
+
+        <div class="dropdown">
+          <span class="pill active">Special Foods</span>
+        </div>
+
+        <div class="dropdown">
+          <span class="pill ">Popular</span>
+          <div class="dropdown-menu">
+            <span data-search="Top Rated">Top Rated</span>
+            <span data-search="Most Ordered">Most Ordered</span>
+            <span data-search="Trending">Trending</span>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <span class="pill">Chicken</span>
+          <div class="dropdown-menu">
+            <span data-search="Chicken Biriyani">Chicken Biriyani</span>
+            <span data-search="Chicken Shawarma">Chicken Shawarma</span>
+            <span data-search="Chicken Burger">Chicken Burger</span>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <span class="pill">Fast Food</span>
+          <div class="dropdown-menu">
+            <span data-search="Burger">Burger</span>
+            <span data-search="Pizza">Pizza</span>
+            <span data-search="Fries">Fries</span>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <span class="pill">Dinner</span>
+          <div class="dropdown-menu">
+            <span data-search="Family Meals">Family Meals</span>
+            <span data-search="Combos">Combos</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SEARCH -->
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search food..."
+          autocomplete="off"
+        />
+        <div id="suggestions"></div>
+      </div>
+    </header>
+
+    <!-- SEARCH RESULT -->
+    <section class="result">
+      <div id="foodDetails"></div>
+    </section>
+
+    <!-- MENU GRID -->
+    <section class="menu">
+      <h2 class="section-title">Popular Items</h2>
+
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46">
+          <h3>Chicken Biriyani</h3>
+          <p class="price">₹180</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b">
+          <h3>Chicken Fried Rice</h3>
+          <p class="price">₹160</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc">
+          <h3>Chicken Shawarma</h3>
+          <p class="price">₹140</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+          <h3>Chicken Burger</h3>
+          <p class="price">₹150</p>
+          <button>Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
