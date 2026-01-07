@@ -1,0 +1,187 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+
+  background-color: #fff9ef;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  background-repeat: repeat;
+  
+}
+
+.page {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+
+.header {
+  text-align: center;
+  padding: 40px 20px 30px;
+}
+
+
+.header h1 {
+  margin-bottom: 20px;
+}
+
+
+.categories {
+  margin-bottom: 25px;
+}
+
+
+.pill {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #f0e6d8;
+  margin: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pill.active {
+  background: #f4b400;
+  color: white;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-width: 160px;
+  text-align: left;
+  z-index: 10;
+}
+
+.dropdown-menu span {
+  display: block;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-menu span:hover {
+  background: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.search-container {
+  max-width: 400px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+
+#suggestions {
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#suggestions div {
+  padding: 12px;
+  cursor: pointer;
+}
+
+#suggestions div:hover,
+#suggestions div.active {
+  background: #f2f2f2;
+}
+
+
+.result {
+  padding: 20px;
+}
+
+#foodDetails {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#foodDetails img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.menu {
+  padding: 40px 20px 60px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-card h3 {
+  margin: 12px 0 6px;
+}
+
+.price {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.menu-card button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #f4b400;
+  color: white;
+  cursor: pointer;
+}
